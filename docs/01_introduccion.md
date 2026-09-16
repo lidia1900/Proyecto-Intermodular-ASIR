@@ -39,6 +39,7 @@ centralizar y mejorar la gestión de los recursos tecnológicos del centro.
 - Mejorar la seguridad de los sistemas.
 - Implantar un sistema de copias de seguridad.
 - Proporcionar servicios web para la organización.
+- Garantizar la disponibilidad de los servicios. 
 
 ## 1.5. Interesados
 
