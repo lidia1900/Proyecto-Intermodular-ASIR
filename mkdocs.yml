@@ -1,1 +1,5 @@
+site_name: Proyecto Intermodular ASIR
 
+nav:
+  - Inicio: index.md
+  - Introducción: 01_introduccion.md
