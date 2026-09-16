@@ -1,4 +1,4 @@
-name: Publicar documentación MkDocs
+name: Publicar documentacion MkDocs
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Instalar MkDocs
         run: pip install mkdocs
