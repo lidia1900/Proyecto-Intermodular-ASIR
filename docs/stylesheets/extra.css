@@ -16,8 +16,20 @@
 
 .md-grid {
     max-width: none;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Columna de navegación izquierda a 10px del borde */
+.md-sidebar--primary {
+    display: block;
+    margin-left: 0;
+}
+
+/* Quitar espacio adicional del contenedor principal */
+.md-main__inner {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -52,19 +64,25 @@
 
 .md-typeset table:not([class]) {
     width: auto;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 
 /* =====================================================
    BUSCADOR
-   Pequeño y situado a la derecha.
-   Material se encargará de ampliarlo al activarlo.
+   Pegado al margen derecho y expansión normal al buscar
    ===================================================== */
 
 @media screen and (min-width: 60em) {
 
+    .md-header__inner {
+        max-width: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .md-search {
         margin-left: auto;
+        margin-right: 0;
     }
 }
