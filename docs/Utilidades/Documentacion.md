@@ -49,9 +49,6 @@ Antes de comenzar la actividad debes disponer de:
 
 ### 4. Prompt de la actividad
 
-Copia el siguiente prompt completo y pégalo en una **nueva conversación de ChatGPT**.
-
-
 <div class="prompt-scroll" markdown="1">
 ```text
 Actúa como mi profesor y guía técnico para preparar el entorno de trabajo de mi
