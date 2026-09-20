@@ -1,12 +1,18 @@
 /* ==========================================================
-   1. PROMPT
-   Mantener el bloque completo, pero mostrar solo unas 5 líneas.
-   El botón de copiar de Material sigue copiando TODO el prompt.
+   PROMPT
+   5 líneas visibles + scroll vertical.
+   No afecta al botón de copiar de Material.
    ========================================================== */
 
-.prompt-scroll pre {
-    max-height: 8em !important;
+.prompt-scroll .highlight {
+    max-height: 8.5em !important;
     overflow-y: auto !important;
+    overflow-x: auto;
+}
+
+.prompt-scroll .highlight pre {
+    margin: 0 !important;
+    overflow: visible !important;
 }
 
 
