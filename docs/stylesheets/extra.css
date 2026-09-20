@@ -1,20 +1,28 @@
 /* ==========================================================
-   PROMPT
-   5 líneas visibles + scroll vertical.
-   No afecta al botón de copiar de Material.
+   PROMPT DE CHATGPT
+   Bloque limitado a 5 líneas con scroll.
+   El botón de copiar de Material permanece intacto.
    ========================================================== */
 
+.prompt-scroll {
+    max-height: 9rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* El bloque generado por Material no puede aumentar
+   la altura del contenedor */
 .prompt-scroll .highlight {
-    max-height: 8.5em !important;
-    overflow-y: auto !important;
+    margin: 0;
+}
+
+/* Permitimos desplazamiento horizontal si alguna línea
+   del prompt es demasiado larga */
+.prompt-scroll pre {
     overflow-x: auto;
+    margin: 0;
 }
-
-.prompt-scroll .highlight pre {
-    margin: 0 !important;
-    overflow: visible !important;
-}
-
 
 /* ==========================================================
    2. COLUMNA DERECHA
