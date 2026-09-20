@@ -10,8 +10,20 @@
 
 
 /* =====================================================
+   DISEÑO GENERAL
+   Aprovechar prácticamente todo el ancho de la pantalla
+   ===================================================== */
+
+.md-grid {
+    max-width: none;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+/* =====================================================
    COLUMNA IZQUIERDA
-   Mantener visible la navegación
+   Mantenerla visible y próxima al borde izquierdo
    ===================================================== */
 
 .md-sidebar--primary {
@@ -21,7 +33,7 @@
 
 /* =====================================================
    COLUMNA DERECHA
-   Ocultar la tabla de contenidos
+   Ocultar completamente la tabla de contenidos
    ===================================================== */
 
 .md-sidebar--secondary {
@@ -46,20 +58,13 @@
 
 /* =====================================================
    BUSCADOR
-   Mantener un tamaño compacto en pantallas grandes
+   Pequeño y situado a la derecha.
+   Material se encargará de ampliarlo al activarlo.
    ===================================================== */
 
 @media screen and (min-width: 60em) {
 
     .md-search {
-        width: 18rem;
-    }
-
-    .md-search__inner {
-        width: 18rem;
-    }
-
-    .md-search__form {
-        width: 18rem;
+        margin-left: auto;
     }
 }
