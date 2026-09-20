@@ -5,11 +5,12 @@
    ========================================================== */
 
 /* Prompt: mostrar solo unas 5 líneas */
-pre.prompt-scroll {
+/* Prompt: mostrar aproximadamente 5 líneas */
+.md-typeset pre > code {
     max-height: 8em;
     overflow-y: auto;
+    display: block;
 }
-
 /* ==========================================================
    2. COLUMNA DERECHA
    Ocultar únicamente la tabla de contenidos de la derecha.
