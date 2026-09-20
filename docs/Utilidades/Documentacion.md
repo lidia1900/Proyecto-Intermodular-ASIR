@@ -52,6 +52,7 @@ Antes de comenzar la actividad debes disponer de:
 Copia el siguiente prompt completo y pégalo en una **nueva conversación de ChatGPT**.
 
 <div class="prompt-scroll" markdown="1">
+
 ```text
 Actúa como mi profesor y guía técnico para preparar el entorno de trabajo de mi
 Proyecto Intermodular de 2.º de ASIR.
@@ -501,6 +502,8 @@ crear el repositorio desde la interfaz web de GitHub.
 ```
 
 </div>
+
+
 
 
 
