@@ -1,12 +1,49 @@
+/* =====================================================
+   PROMPT
+   Mostrar aproximadamente 5 líneas y permitir scroll
+   ===================================================== */
+
 .prompt-scroll .highlight pre {
-    max-height: 7em;
+    max-height: 8em;
     overflow-y: auto;
 }
-/* Aprovechar más el ancho de la pantalla */
+
+
+/* =====================================================
+   NAVEGACIÓN
+   Ocultar la columna lateral izquierda
+   ===================================================== */
+
+.md-sidebar--primary {
+    display: none;
+}
+
+
+/* =====================================================
+   CONTENIDO
+   Aprovechar el espacio disponible
+   ===================================================== */
+
 .md-grid {
     max-width: none;
 }
-/* Mantener el buscador compacto también cuando está activo */
+
+
+/* =====================================================
+   TABLAS
+   La tabla ocupa únicamente el espacio que necesita
+   ===================================================== */
+
+.md-typeset table:not([class]) {
+    width: auto;
+}
+
+
+/* =====================================================
+   BUSCADOR
+   Mantenerlo compacto en pantallas grandes
+   ===================================================== */
+
 @media screen and (min-width: 60em) {
 
     .md-search {
@@ -20,13 +57,4 @@
     .md-search__form {
         width: 18rem;
     }
-}
-/* Ocultar la tabla de contenidos de la derecha */
-.md-sidebar--secondary {
-    display: none;
-}
-
-/* Evitar que las tablas ocupen todo el ancho */
-.md-typeset table:not([class]) {
-    width: auto;
 }
