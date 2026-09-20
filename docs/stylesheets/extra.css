@@ -1,0 +1,4 @@
+.prompt-scroll pre {
+    max-height: 8em;
+    overflow-y: auto;
+}
