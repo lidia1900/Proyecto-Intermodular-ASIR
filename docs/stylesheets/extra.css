@@ -1,15 +1,9 @@
-/* ==========================================================
-   PROMPT DE CHATGPT
-   Bloque limitado a 5 líneas con scroll.
-   El botón de copiar de Material permanece intacto.
-   ========================================================== */
 
 /* Prompt: mostrar solo unas 5 líneas */
 /* Prompt: mostrar aproximadamente 5 líneas */
-.md-typeset pre > code {
+.prompt-scroll .highlight pre {
     max-height: 8em;
     overflow-y: auto;
-    display: block;
 }
 /* ==========================================================
    2. COLUMNA DERECHA
