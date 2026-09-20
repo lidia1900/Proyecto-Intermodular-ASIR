@@ -52,7 +52,7 @@ Antes de comenzar la actividad debes disponer de:
 Copia el siguiente prompt completo y pégalo en una **nueva conversación de ChatGPT**.
 
 
-
+<div class="prompt-scroll" markdown="1">
 ```text
 Actúa como mi profesor y guía técnico para preparar el entorno de trabajo de mi
 Proyecto Intermodular de 2.º de ASIR.
@@ -213,15 +213,15 @@ docs/01_introduccion.md
 
 La introducción debe contener progresivamente:
 
-# 1. Introducción
+1. Introducción
 
-## 1.1. Título del reto
-## 1.2. Contexto
-## 1.3. Problemática o necesidad
-## 1.4. Objetivos
-### Objetivo general
-### Objetivos específicos
-## 1.5. Interesados
+1.1. Título del reto
+1.2. Contexto
+1.3. Problemática o necesidad
+1.4. Objetivos
+Objetivo general
+Objetivos específicos
+1.5. Interesados
 
 NO inventes inicialmente el contenido de mi proyecto.
 
@@ -501,6 +501,7 @@ crear el repositorio desde la interfaz web de GitHub.
 
 ```
 
+</div>
 
 
 
