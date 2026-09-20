@@ -4,24 +4,10 @@
    El botón de copiar de Material permanece intacto.
    ========================================================== */
 
-.prompt-scroll {
-    max-height: 9rem;
+/* Prompt: mostrar solo unas 5 líneas */
+pre.prompt-scroll {
+    max-height: 8em;
     overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
-}
-
-/* El bloque generado por Material no puede aumentar
-   la altura del contenedor */
-.prompt-scroll .highlight {
-    margin: 0;
-}
-
-/* Permitimos desplazamiento horizontal si alguna línea
-   del prompt es demasiado larga */
-.prompt-scroll pre {
-    overflow-x: auto;
-    margin: 0;
 }
 
 /* ==========================================================
