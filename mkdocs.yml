@@ -4,5 +4,4 @@ theme:
   language: es
 
 nav:
-  - Proyecto Intermodular: index.md
-  - Introducción: 01_introduccion.md
+    - Introducción: index.md
