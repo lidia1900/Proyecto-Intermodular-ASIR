@@ -21,8 +21,8 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Instalar MkDocs
-        run: pip install mkdocs
+      - name: Instalar MkDocs Material
+        run: pip install mkdocs-material
 
       - name: Publicar web
         run: mkdocs gh-deploy --force
