@@ -6,9 +6,27 @@
 .md-grid {
     max-width: none;
 }
-/* Buscador más compacto en pantallas grandes */
+/* Mantener el buscador compacto también cuando está activo */
 @media screen and (min-width: 60em) {
-    .md-search__inner {
-        width: 30rem;
+
+    .md-search {
+        width: 18rem;
     }
+
+    .md-search__inner {
+        width: 18rem;
+    }
+
+    .md-search__form {
+        width: 18rem;
+    }
+}
+/* Ocultar la tabla de contenidos de la derecha */
+.md-sidebar--secondary {
+    display: none;
+}
+
+/* Evitar que las tablas ocupen todo el ancho */
+.md-typeset table:not([class]) {
+    width: auto;
 }
