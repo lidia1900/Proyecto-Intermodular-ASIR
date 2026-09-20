@@ -44,16 +44,16 @@ Antes de comenzar la actividad debes disponer de:
 - Si el resultado que obtienes no coincide con el esperado, **no continúes**. Explica a ChatGPT qué ha ocurrido y, si es necesario, adjunta una captura de pantalla para que pueda ayudarte a solucionar el problema.
 - No ejecutes instrucciones diferentes a las indicadas en la actividad ni realices instalaciones en tu equipo.
 
-!!! tip "Recuerda"
+"Recuerda"
     ChatGPT actuará como **guía**, pero eres tú quien debe realizar las acciones, comprobar los resultados y comprender el proceso.
 
 ### 4. Prompt de la actividad
 
 Copia el siguiente prompt completo y pégalo en una **nueva conversación de ChatGPT**.
 
-<div style="max-height: 8em; overflow-y: auto; border: 1px solid #90caf9; border-radius: 6px; padding: 12px; background-color: #f5faff;">
 
-<pre style="margin: 0; white-space: pre-wrap;"><code>Actúa como mi profesor y guía técnico para preparar el entorno de trabajo de mi
+```text
+Actúa como mi profesor y guía técnico para preparar el entorno de trabajo de mi
 Proyecto Intermodular de 2.º de ASIR.
 
 Quiero realizar todo el proceso yo mismo y entender qué estoy haciendo.
@@ -498,7 +498,7 @@ NO ME EXPLIQUES AHORA TODO EL PROCESO.
 EMPIEZA ÚNICAMENTE POR EL PRIMER PASO:
 crear el repositorio desde la interfaz web de GitHub.</code></pre>
 
-</div>
+```
 
 
 
