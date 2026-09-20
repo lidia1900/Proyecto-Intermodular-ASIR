@@ -1,6 +1,6 @@
 # Proyecto Intermodular
 
-En esta página encontrarás la información, materiales y actividades del **Proyecto Intermodular de 2.º de ASIR** del IES Ribera del Tajo. A lo largo del curso desarrollarás de forma individual un proyecto relacionado con una **necesidad real o simulada de una empresa u organización**, en el que aplicarás de forma práctica conocimientos adquiridos en los diferentes módulos del ciclo: sistemas, redes, servicios, bases de datos, seguridad, aplicaciones web y otras tecnologías relacionadas con ASIR.
+En esta página encontrarás información sobre el módulo de **Proyecto Intermodular de ASIR** del IES Ribera del Tajo. A lo largo del curso, desarrollarás un proyecto que resuelva una **necesidad real o simulada de una empresa u organización**, aplicando tus conocimientos en los módulos del ciclo: sistemas operativos, redes, servicios, bases de datos, seguridad, aplicaciones. 
 
 ## Normativa
 
@@ -17,46 +17,31 @@ La normativa de referencia para el desarrollo del módulo es:
 
 ---
 
-## Competencias profesionales
+## Competencia general
 
-A través del Proyecto Intermodular se pretende que el alumnado integre y aplique de manera global las competencias desarrolladas durante el ciclo de **Administración de Sistemas Informáticos en Red**.
+La competencia general del título de **Técnico Superior en Administración de Sistemas Informáticos en Red** consiste en:
 
-Entre las principales capacidades profesionales que se trabajan se encuentran:
+> Configurar, administrar y mantener sistemas informáticos, garantizando la funcionalidad, la integridad de los recursos y servicios del sistema, con la calidad exigida y cumpliendo la reglamentación vigente.
 
-- **Integrar conocimientos y competencias** adquiridos en los diferentes módulos profesionales del ciclo.
-- Analizar las **necesidades de una organización** y transformarlas en requisitos para un proyecto tecnológico.
-- **Diseñar y planificar infraestructuras y servicios informáticos**, teniendo en cuenta criterios técnicos, económicos y organizativos.
-- Aplicar conocimientos relacionados con **sistemas operativos, redes, servicios, bases de datos, virtualización y seguridad**.
-- Seleccionar y utilizar **herramientas y tecnologías actuales** adecuadas a las necesidades del proyecto.
-- Identificar problemas técnicos y proponer **soluciones justificadas y viables**.
-- Aplicar criterios de **seguridad, eficiencia, sostenibilidad, escalabilidad y calidad**.
-- Elaborar **documentación técnica profesional** que permita registrar y justificar las distintas fases del proyecto.
-- Utilizar herramientas de **control de versiones y documentación** que permitan mantener la trazabilidad del trabajo realizado.
-- Desarrollar la **autonomía, responsabilidad y capacidad de organización** necesarias para gestionar un proyecto tecnológico.
-- Comunicar y justificar de forma clara las **decisiones técnicas y organizativas** adoptadas.
-- Presentar y defender el proyecto utilizando un lenguaje adecuado tanto para una audiencia técnica como no técnica.
+El **Proyecto Intermodular** permite integrar y aplicar las competencias profesionales, personales y sociales adquiridas en los diferentes módulos del ciclo mediante el desarrollo de un proyecto relacionado con el ámbito profesional de ASIR.
 
 ---
 
 ## Objetivos
 
-Los principales objetivos del Proyecto Intermodular son:
+A través del **Proyecto Intermodular** se pretende que el alumnado sea capaz de:
 
-- Integrar los conocimientos y competencias adquiridos en los distintos módulos profesionales de ASIR mediante su aplicación a un **proyecto real o simulado**.
-- Analizar una organización o situación concreta para **detectar necesidades y problemas** susceptibles de ser resueltos mediante soluciones TIC.
-- Diseñar un proyecto completo de administración de sistemas informáticos en red, desde el **análisis inicial hasta su planificación, documentación y evaluación**.
-- Definir los **objetivos, alcance y requisitos** del proyecto.
-- Seleccionar y justificar las tecnologías y herramientas más adecuadas para dar respuesta a las necesidades detectadas.
-- Planificar las diferentes fases del proyecto, estableciendo **actividades, recursos, tiempos y posibles riesgos**.
-- Aplicar buenas prácticas en el diseño y gestión de **infraestructuras tecnológicas**.
-- Identificar y resolver los problemas técnicos que puedan aparecer durante el desarrollo del proyecto.
-- Documentar adecuadamente todas las fases mediante **formatos y lenguajes profesionales**.
-- Utilizar herramientas que permitan mantener la **trazabilidad y evolución** del proyecto.
-- Desarrollar la capacidad de **autogestión y toma de decisiones**.
-- Analizar críticamente las soluciones propuestas atendiendo a criterios de **eficiencia, seguridad, sostenibilidad y escalabilidad**.
-- Presentar y defender las decisiones técnicas adoptadas durante el desarrollo del proyecto.
-- Aproximar al alumnado a situaciones y procedimientos propios del **entorno profesional de la administración de sistemas informáticos**.
-
+- **Identificar necesidades** de una empresa u organización que puedan resolverse mediante un proyecto relacionado con las tecnologías de la información.
+- **Definir y caracterizar un proyecto**, estableciendo sus objetivos, alcance y requisitos.
+- **Diseñar una solución tecnológica** adecuada a las necesidades detectadas.
+- Integrar conocimientos adquiridos en los distintos módulos de **ASIR**: sistemas, redes, servicios, bases de datos, seguridad, aplicaciones web, virtualización y otras tecnologías relacionadas.
+- **Planificar la ejecución del proyecto**, determinando actividades, recursos, tiempos y posibles riesgos.
+- Seleccionar y justificar las **tecnologías y herramientas** más adecuadas para cada proyecto.
+- Aplicar criterios de **seguridad, calidad, eficiencia y sostenibilidad** en las soluciones propuestas.
+- **Documentar** de forma clara y profesional las diferentes fases del proyecto.
+- Realizar el **seguimiento y control** del proyecto, registrando incidencias, cambios y resultados.
+- Desarrollar la **autonomía, responsabilidad y capacidad de resolución de problemas**.
+- **Presentar y defender** las decisiones técnicas adoptadas y los resultados obtenidos.
 ---
 
 ## Resultados de aprendizaje
@@ -69,54 +54,6 @@ El módulo se estructura en torno a los siguientes **Resultados de Aprendizaje (
 | **RA2** | **Diseña proyectos relacionados con las competencias expresadas en el título**, incluyendo y desarrollando las fases que lo componen. | **25 %** |
 | **RA3** | **Planifica la puesta en funcionamiento o ejecución del proyecto**, determinando el plan de intervención y la documentación asociada. | **25 %** |
 | **RA4** | **Define los procedimientos para el seguimiento y control en la ejecución del proyecto**, justificando la selección de variables e instrumentos empleados. | **25 %** |
-
-### RA1. Identificación de necesidades
-
-El alumnado analizará el sector productivo y las características de las organizaciones para:
-
-- identificar necesidades;
-- analizar oportunidades;
-- determinar el tipo de proyecto necesario;
-- establecer sus características principales;
-- considerar aspectos legales y organizativos;
-- elaborar el guion inicial de trabajo.
-
-### RA2. Diseño del proyecto
-
-El alumnado deberá transformar las necesidades detectadas en un proyecto viable, definiendo:
-
-- información necesaria;
-- viabilidad técnica;
-- fases del proyecto;
-- objetivos y alcance;
-- actividades;
-- recursos necesarios;
-- documentación;
-- mecanismos de control de calidad.
-
-### RA3. Planificación de la ejecución
-
-Una vez diseñada la solución, se deberá establecer cómo se desarrollará o implementará el proyecto:
-
-- secuenciación de actividades;
-- recursos necesarios;
-- procedimientos de actuación;
-- análisis de riesgos;
-- planificación temporal;
-- valoración económica;
-- documentación asociada a la ejecución.
-
-### RA4. Seguimiento y control
-
-Finalmente, el proyecto deberá incorporar procedimientos que permitan comprobar su evolución y calidad:
-
-- procedimientos de evaluación;
-- indicadores de calidad;
-- gestión y registro de incidencias;
-- gestión de cambios;
-- documentación de seguimiento;
-- mecanismos de evaluación del proyecto;
-- comprobación del cumplimiento de los requisitos establecidos.
 
 ---
 
@@ -140,7 +77,7 @@ La evolución general del proyecto seguirá un proceso similar a:
 
 ## Metodología
 
-El módulo se plantea como una **simulación de un proyecto profesional**, en la que cada alumno desarrollará **su propio proyecto individual** relacionado con una organización, empresa o necesidad real o simulada.
+El módulo se plantea como una **simulación de un proyecto profesional**, en la que cada alumno desarrollará su proyecto.
 
 El punto de partida no será una tecnología concreta, sino una **necesidad o problemática** que deberá ser analizada antes de proponer una solución.
 
@@ -152,52 +89,11 @@ La metodología se apoyará en los siguientes principios:
 - Desarrollo progresivo del proyecto mediante **fases y entregas parciales**.
 - Aplicación práctica de conocimientos relacionados con **redes, sistemas, servicios, bases de datos, virtualización, seguridad y aplicaciones web**, cuando las necesidades concretas del proyecto así lo requieran.
 - Justificación de las **decisiones técnicas**, evitando seleccionar tecnologías sin haber analizado previamente las necesidades y requisitos.
-- Uso de **Markdown** para elaborar documentación técnica estructurada.
-- Uso de **GitHub** para almacenar y mantener el histórico de la documentación del proyecto.
-- Uso de **MkDocs** para transformar la documentación Markdown en un sitio web.
-- Publicación de la documentación mediante **GitHub Pages**.
 - Seguimiento progresivo mediante hitos y entregas.
 - Elaboración de documentación técnica de forma **continua**, evitando concentrar la memoria únicamente al final del proyecto.
 - Presentación y **defensa individual** de las decisiones adoptadas y de los resultados obtenidos.
 
 > **El objetivo no es únicamente conseguir que una solución funcione, sino ser capaz de analizar una necesidad, justificar una solución, planificarla, documentarla y defender técnicamente las decisiones adoptadas.**
-
----
-
-## Documentación del proyecto
-
-Cada alumno dispondrá de un **repositorio propio en GitHub** que irá evolucionando durante el curso.
-
-La documentación se escribirá utilizando **Markdown** y se publicará progresivamente como sitio web mediante **MkDocs y GitHub Pages**.
-
-La estructura inicial será:
-
-~~~text
-Proyecto-Intermodular-ASIR/
-│
-├── README.md
-├── mkdocs.yml
-│
-└── docs/
-    ├── index.md
-    └── 01_introduccion.md
-~~~
-
-A medida que avance el proyecto se incorporarán nuevos documentos:
-
-~~~text
-docs/
-├── index.md
-├── 01_introduccion.md
-├── 02_marco_tecnologico.md
-├── 03_desarrollo.md
-├── 04_resultados.md
-├── 05_conclusiones.md
-├── 06_bibliografia.md
-└── 07_anexos.md
-~~~
-
-De esta forma, la documentación seguirá el mismo proceso de evolución que el propio proyecto.
 
 ---
 
@@ -259,18 +155,3 @@ La selección de tecnologías deberá estar siempre **justificada por los requis
 
 ---
 
-## ¿Qué vamos a construir?
-
-A lo largo del curso cada alumno desarrollará progresivamente un proyecto completo:
-
-1. **Analizará** una organización y sus necesidades.
-2. **Caracterizará** el problema o reto.
-3. **Definirá** objetivos, alcance y requisitos.
-4. **Diseñará** una solución tecnológica.
-5. **Planificará** su ejecución.
-6. **Documentará** las decisiones y el trabajo realizado.
-7. **Establecerá** procedimientos de seguimiento y control.
-8. **Evaluará** los resultados obtenidos.
-9. **Presentará y defenderá** técnicamente su proyecto.
-
-El resultado será tanto el **proyecto técnico** como el conjunto de evidencias y documentación que permitan demostrar y justificar todo el proceso seguido.
