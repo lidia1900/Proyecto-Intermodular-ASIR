@@ -1,77 +1,59 @@
-/* =====================================================
-   PROMPT
-   Mostrar aproximadamente 5 líneas y permitir scroll
-   ===================================================== */
+/* ==========================================================
+   1. PROMPT
+   Mantener el bloque completo, pero mostrar solo unas 5 líneas.
+   El botón de copiar de Material sigue copiando TODO el prompt.
+   ========================================================== */
 
-.prompt-scroll .highlight pre {
-    max-height: 8em;
-    overflow-y: auto;
+.prompt-scroll pre {
+    max-height: 8em !important;
+    overflow-y: auto !important;
 }
 
 
-/* =====================================================
-   DISEÑO GENERAL
-   Aprovechar prácticamente todo el ancho de la pantalla
-   ===================================================== */
-
-.md-grid {
-    max-width: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-/* Columna de navegación izquierda a 10px del borde */
-.md-sidebar--primary {
-    display: block;
-    margin-left: 0;
-}
-
-/* Quitar espacio adicional del contenedor principal */
-.md-main__inner {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-/* =====================================================
-   COLUMNA IZQUIERDA
-   Mantenerla visible y próxima al borde izquierdo
-   ===================================================== */
-
-.md-sidebar--primary {
-    display: block;
-}
-
-
-/* =====================================================
-   COLUMNA DERECHA
-   Ocultar completamente la tabla de contenidos
-   ===================================================== */
+/* ==========================================================
+   2. COLUMNA DERECHA
+   Ocultar únicamente la tabla de contenidos de la derecha.
+   ========================================================== */
 
 .md-sidebar--secondary {
     display: none !important;
 }
 
 
-/* =====================================================
-   TABLAS
-   No ocupar todo el ancho de la página
-   ===================================================== */
+/* ==========================================================
+   3. DISEÑO GENERAL
+   Aprovechar el ancho de pantalla.
+   ========================================================== */
 
-.md-typeset__table {
-    width: auto;
-}
-
-.md-typeset table:not([class]) {
-    width: auto;
-    max-width: 80%;
+.md-grid {
+    max-width: none;
 }
 
 
-/* =====================================================
-   BUSCADOR
-   Pegado al margen derecho y expansión normal al buscar
-   ===================================================== */
+/* ==========================================================
+   4. MENÚ IZQUIERDO
+   Mantenerlo visible y dejarlo a 10 px del borde.
+   ========================================================== */
+
+@media screen and (min-width: 76.25em) {
+
+    .md-sidebar--primary {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .md-main__inner {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+
+/* ==========================================================
+   5. CABECERA Y BUSCADOR
+   Aprovechar todo el ancho y colocar el buscador a la derecha.
+   NO fijamos su ancho para que Material pueda ampliarlo.
+   ========================================================== */
 
 @media screen and (min-width: 60em) {
 
@@ -85,4 +67,19 @@
         margin-left: auto;
         margin-right: 0;
     }
+}
+
+
+/* ==========================================================
+   6. TABLAS
+   No obligarlas a ocupar todo el ancho disponible.
+   ========================================================== */
+
+.md-typeset__table {
+    width: auto;
+}
+
+.md-typeset table:not([class]) {
+    width: auto;
+    max-width: 100%;
 }
