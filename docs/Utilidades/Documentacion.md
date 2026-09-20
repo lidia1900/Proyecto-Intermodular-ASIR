@@ -496,7 +496,7 @@ NO introduzcas:
 NO ME EXPLIQUES AHORA TODO EL PROCESO.
 
 EMPIEZA ÚNICAMENTE POR EL PRIMER PASO:
-crear el repositorio desde la interfaz web de GitHub.</code></pre>
+crear el repositorio desde la interfaz web de GitHub.
 
 ```
 
