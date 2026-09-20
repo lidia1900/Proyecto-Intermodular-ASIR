@@ -6,3 +6,9 @@
 .md-grid {
     max-width: none;
 }
+/* Buscador más compacto en pantallas grandes */
+@media screen and (min-width: 60em) {
+    .md-search__inner {
+        width: 30rem;
+    }
+}
