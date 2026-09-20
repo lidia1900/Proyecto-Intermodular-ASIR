@@ -53,7 +53,7 @@ Copia el siguiente prompt completo y pégalo en una **nueva conversación de Cha
 
 
 
-``` { .text .prompt-scroll }
+```text
 Actúa como mi profesor y guía técnico para preparar el entorno de trabajo de mi
 Proyecto Intermodular de 2.º de ASIR.
 
