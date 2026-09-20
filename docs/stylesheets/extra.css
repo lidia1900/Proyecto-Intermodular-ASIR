@@ -2,3 +2,7 @@
     max-height: 7em;
     overflow-y: auto;
 }
+/* Aprovechar más el ancho de la pantalla */
+.md-grid {
+    max-width: none;
+}
