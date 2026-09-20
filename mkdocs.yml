@@ -4,6 +4,8 @@ site_url: https://lidia1900.github.io/Proyecto-Intermodular-ASIR/
 theme:
   name: material
   language: es
+  features:
+    - content.code.copy
 
 nav:
   - Introducción: index.md
