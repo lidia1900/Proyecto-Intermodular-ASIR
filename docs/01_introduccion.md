@@ -1,18 +1,17 @@
 # Proyecto Intermodular
 
-En esta página encontrarás la organización, documentación y materiales de trabajo del módulo de **Proyecto Intermodular** del Ciclo Formativo de Grado Superior de **Administración de Sistemas Informáticos en Red (ASIR)**, impartido en el **IES Ribera del Tajo de Talavera de la Reina**.
+En esta página encontrarás la información, materiales y actividades del **Proyecto Intermodular de 2.º de ASIR** del IES Ribera del Tajo. A lo largo del curso desarrollarás de forma individual un proyecto relacionado con una **necesidad real o simulada de una empresa u organización**, en el que aplicarás de forma práctica conocimientos adquiridos en los diferentes módulos del ciclo: sistemas, redes, servicios, bases de datos, seguridad, aplicaciones web y otras tecnologías relacionadas con ASIR.
 
-El módulo tiene como finalidad integrar los **conocimientos, habilidades y competencias adquiridos en los distintos módulos profesionales del ciclo**, permitiendo al alumnado aplicarlos de forma práctica mediante el desarrollo de un proyecto relacionado con las necesidades de un entorno productivo real o simulado.
+## Normativa
 
-El Proyecto Intermodular permite abordar de forma conjunta conocimientos relacionados con la **administración de sistemas, redes, bases de datos, servicios de red, seguridad informática, aplicaciones web, virtualización y digitalización**, proporcionando una visión global de las infraestructuras y servicios TIC de una organización.
+La normativa de referencia para el desarrollo del módulo es:
 
-Su desarrollo se enmarca, entre otra normativa, en:
-
-- [Ley Orgánica 3/2022, de 31 de marzo, de ordenación e integración de la Formación Profesional](https://www.boe.es/buscar/act.php?id=BOE-A-2022-5139).
-- [Real Decreto 659/2023, de 18 de julio, por el que se desarrolla la ordenación del Sistema de Formación Profesional](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-16889).
-- [Real Decreto 500/2024, de 21 de mayo, por el que se modifican determinados reales decretos por los que se establecen títulos de Formación Profesional de grado superior](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10685).
-- **Decreto 80/2024, de 5 de noviembre**, por el que se modifican determinados decretos que establecen los currículos de los ciclos formativos de grado superior en Castilla-La Mancha.
-- **Orden 201/2024, de 28 de noviembre**, por la que se regula la evaluación, promoción, titulación y certificación académica del alumnado de los grados D y E de Formación Profesional en Castilla-La Mancha, modificada por la **Orden 55/2026, de 17 de abril**.
+- [**Ley Orgánica 3/2022, de 31 de marzo**](https://www.boe.es/buscar/act.php?id=BOE-A-2022-5139), de ordenación e integración de la Formación Profesional.
+- [**Real Decreto 659/2023, de 18 de julio**](https://www.boe.es/eli/es/rd/2023/07/18/659/con), por el que se desarrolla la ordenación del Sistema de Formación Profesional.
+- [**Real Decreto 500/2024, de 21 de mayo**](https://www.boe.es/buscar/doc.php?id=BOE-A-2024-10685), por el que se modifican determinados reales decretos que establecen títulos de Formación Profesional de grado superior y sus enseñanzas mínimas.
+- [**Decreto 80/2024, de 5 de noviembre**](https://docm.jccm.es/docm/verArchivoHtml.do?ruta=2024%2F11%2F11%2Fhtml%2F2024_8907.html&tipo=rutaDocm), por el que se modifican los currículos de los ciclos formativos de grado superior en Castilla-La Mancha.
+- [**Orden 201/2024, de 28 de noviembre**](http://docm.jccm.es/docm/eli/es-cm/o/2024/11/28/201), por la que se regula la evaluación, promoción, titulación y certificación académica del alumnado de los grados D y E de Formación Profesional en Castilla-La Mancha.
+- [**Orden 55/2026, de 17 de abril**](https://docm.jccm.es/docm/verArchivoHtml.do?ruta=2026%2F04%2F27%2Fhtml%2F2026_3017.html&tipo=rutaDocm), por la que se modifica la Orden 201/2024.
 
 > El **Proyecto Intermodular** constituye una oportunidad para integrar los conocimientos adquiridos durante el ciclo y aplicarlos al análisis, diseño, planificación, documentación y seguimiento de una solución tecnológica vinculada a una necesidad real o simulada del entorno productivo.
 
