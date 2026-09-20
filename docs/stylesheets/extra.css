@@ -1,4 +1,4 @@
-.prompt-scroll pre {
-    max-height: 8em;
+.prompt-scroll .highlight pre {
+    max-height: 7em;
     overflow-y: auto;
 }
