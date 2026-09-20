@@ -1,7 +1,6 @@
 /* =====================================================
    PROMPT
    Mostrar aproximadamente 5 líneas y permitir scroll
-   El botón de copiar lo proporciona Material for MkDocs
    ===================================================== */
 
 .prompt-scroll .highlight pre {
@@ -11,29 +10,33 @@
 
 
 /* =====================================================
-   DISEÑO GENERAL
-   Aprovechar mejor el ancho disponible
+   COLUMNA IZQUIERDA
+   Mantener visible la navegación
    ===================================================== */
 
-.md-grid {
-    max-width: none;
+.md-sidebar--primary {
+    display: block;
 }
 
 
 /* =====================================================
    COLUMNA DERECHA
-   Ocultar la tabla de contenidos lateral derecha
+   Ocultar la tabla de contenidos
    ===================================================== */
 
 .md-sidebar--secondary {
-    display: none;
+    display: none !important;
 }
 
 
 /* =====================================================
    TABLAS
-   No ocupar todo el ancho disponible
+   No ocupar todo el ancho de la página
    ===================================================== */
+
+.md-typeset__table {
+    width: auto;
+}
 
 .md-typeset table:not([class]) {
     width: auto;
