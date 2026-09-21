@@ -78,3 +78,18 @@
     width: auto;
     max-width: 100%;
 }
+
+/* ==========================================================
+   LOGO DE LA CABECERA
+   ========================================================== */
+
+.md-header__button.md-logo {
+    padding: 0;
+    margin: 0 0.5rem 0 0;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 2.2rem;
+    width: 2.2rem;
+}
