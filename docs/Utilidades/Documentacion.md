@@ -19,7 +19,7 @@ En esta actividad vas a preparar el **entorno de trabajo y documentación que ut
 
 Este entorno te permitirá **almacenar, organizar, desarrollar y documentar** tu proyecto en GitHub y generar, a partir de su documentación, una **página web que se irá actualizando a medida que avance el proyecto**.
 
-### 1. Requisitos previos
+### 1.1. Requisitos previos
 
 Antes de comenzar la actividad debes disponer de:
 
@@ -27,13 +27,13 @@ Antes de comenzar la actividad debes disponer de:
 - Acceso a **ChatGPT**, que utilizarás como guía durante todo el proceso.
 - Un **navegador web**.
   
-### 2. Metodología:
+### 1.2. Metodología:
 
 - **Aprendizaje práctico guiado**, utilizando la **IA generativa como herramienta de andamiaje**. ChatGPT actuará como guía, proporcionando instrucciones y explicaciones paso a paso durante el desarrollo de la actividad.
 
 - **Learning by doing (aprender haciendo)**. Los conceptos y la relación entre las distintas tecnologías se irán descubriendo y comprendiendo **a medida que se utilizan de forma práctica**.
 
-### 3. Pautas para la realización de la actividad
+### 1.3. Pautas para la realización de la actividad
 
 - **Copia el prompt completo**.
 - Abre **ChatGPT** e inicia una **nueva conversación**.
@@ -47,7 +47,7 @@ Antes de comenzar la actividad debes disponer de:
 "Recuerda"
     ChatGPT actuará como **guía**, pero eres tú quien debe realizar las acciones, comprobar los resultados y comprender el proceso.
 
-### 4. Prompt de la actividad
+### 1.4. Prompt de la actividad
 
 <div class="prompt-scroll" markdown="1">
 ```text
