@@ -18,7 +18,7 @@ Tenéis que organizaros para decidir el destino, buscar transporte y alojamiento
 
 Para coordinar todo el trabajo vais a utilizar **Trello**.
 
-!!! "Objetivo"
+!!! Objetivo !!!
     Descubrir por vosotros mismos cómo utilizar Trello para organizar un proyecto en equipo.
 
 ---
