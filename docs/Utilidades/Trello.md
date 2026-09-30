@@ -36,7 +36,7 @@ A continuación:
 
 **POR HACER → EN PROCESO → EN REVISIÓN → TERMINADO**
 
-!!! "Importante"
+!!! Importante !!!
     Debéis intentar descubrir por vosotros mismos cómo realizar estas operaciones en Trello.
 
 ---
@@ -53,9 +53,9 @@ Podéis pensar, por ejemplo, en cuestiones relacionadas con:
 
 - Destino, transporte, alojamiento.
 - Presupuesto, actividades, excursiones.
--
 
-!!! "Recuerda"
+
+!!! Recuerda !!!
     Una tarjeta debe representar una **tarea concreta**.  
     Una tarjeta llamada `Organizar el viaje` sería demasiado general.
 
@@ -75,7 +75,7 @@ Investigad cómo conseguir que vuestro tablero cumpla **TODOS ESTOS REQUISITOS**
 8. Al menos una tarea debe pasar de **POR HACER** a **EN PROCESO**.
 9. Otra tarea debe llegar hasta **TERMINADO**.
 
-!!! "Antes de preguntar..."
+!!! Antes de preguntar...!!!
     Si no sabéis dónde se encuentra alguna opción, intentad descubrirla primero explorando Trello.
 
 ---
@@ -115,5 +115,5 @@ Podéis consultar la documentación oficial:
 - [Primeros pasos con Trello](https://support.atlassian.com/trello/docs/getting-started/)
 - [Uso de Trello](https://support.atlassian.com/trello/docs/using-trello/)
 
-!!! "Antes de preguntar al profesor"
+!!! Antes de preguntar al profesor !!!
     Si no sabéis cómo realizar alguna acción, buscad primero la solución en la documentación oficial de Trello.
