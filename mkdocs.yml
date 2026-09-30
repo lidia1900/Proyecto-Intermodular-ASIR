@@ -11,6 +11,7 @@ theme:
 nav:
   - Introducción: index.md
   - Utilidades:
+      - Planificación y seguimiento con Trello: Trello.md
       - Documentación: Utilidades/Documentacion.md
       - Git y entorno de desarrollo: Utilidades/Git.md
 
