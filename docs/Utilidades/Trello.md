@@ -4,9 +4,7 @@
 
 Trello es una herramienta de gestión de proyectos que permite organizar el trabajo de forma visual mediante **tableros, listas y tarjetas**.
 
-En el Proyecto Intermodular utilizaremos Trello para organizar las tareas del equipo, asignar responsabilidades y realizar el seguimiento del trabajo.
-
-Antes de utilizarlo en nuestro proyecto, vamos a aprender su funcionamiento mediante un pequeño reto.
+vamos a aprender su funcionamiento mediante un pequeño reto.
 
 ---
 
@@ -20,7 +18,7 @@ Tenéis que organizaros para decidir el destino, buscar transporte y alojamiento
 
 Para coordinar todo el trabajo vais a utilizar **Trello**.
 
-!!! info "Objetivo"
+!!! "Objetivo"
     Descubrir por vosotros mismos cómo utilizar Trello para organizar un proyecto en equipo.
 
 ---
@@ -38,7 +36,7 @@ A continuación:
 
 **POR HACER → EN PROCESO → EN REVISIÓN → TERMINADO**
 
-!!! important "Importante"
+!!! "Importante"
     Debéis intentar descubrir por vosotros mismos cómo realizar estas operaciones en Trello.
 
 ---
@@ -53,15 +51,11 @@ No se proporciona la lista de tareas: **tenéis que decidir vosotros qué necesi
 
 Podéis pensar, por ejemplo, en cuestiones relacionadas con:
 
-- destino,
-- transporte,
-- alojamiento,
-- presupuesto,
-- actividades,
-- comidas,
-- equipaje...
+- Destino, transporte, alojamiento.
+- Presupuesto, actividades, excursiones.
+-
 
-!!! warning "Recuerda"
+!!! "Recuerda"
     Una tarjeta debe representar una **tarea concreta**.  
     Una tarjeta llamada `Organizar el viaje` sería demasiado general.
 
@@ -69,7 +63,7 @@ Podéis pensar, por ejemplo, en cuestiones relacionadas con:
 
 ### 2.3. Descubrir Trello
 
-Investigad cómo conseguir que vuestro tablero cumpla **todos los siguientes requisitos**:
+Investigad cómo conseguir que vuestro tablero cumpla **TODOS ESTOS REQUISITOS**:
 
 1. Todos los miembros del equipo deben pertenecer al tablero.
 2. Todas las tarjetas deben tener un **responsable**.
@@ -81,7 +75,7 @@ Investigad cómo conseguir que vuestro tablero cumpla **todos los siguientes req
 8. Al menos una tarea debe pasar de **POR HACER** a **EN PROCESO**.
 9. Otra tarea debe llegar hasta **TERMINADO**.
 
-!!! tip "Antes de preguntar..."
+!!! "Antes de preguntar..."
     Si no sabéis dónde se encuentra alguna opción, intentad descubrirla primero explorando Trello.
 
 ---
@@ -117,9 +111,9 @@ Para realizar esta actividad tendréis que investigar por vosotros mismos cómo 
 
 Podéis consultar la documentación oficial:
 
-- [Guia Oficial de Trello][https://trello.com/es/guide](https://trello.com/es/guide)
+- [Guia Oficial de Trello](https://trello.com/es/guide)
 - [Primeros pasos con Trello](https://support.atlassian.com/trello/docs/getting-started/)
 - [Uso de Trello](https://support.atlassian.com/trello/docs/using-trello/)
 
-!!! tip "Antes de preguntar al profesor"
+!!! "Antes de preguntar al profesor"
     Si no sabéis cómo realizar alguna acción, buscad primero la solución en la documentación oficial de Trello.
