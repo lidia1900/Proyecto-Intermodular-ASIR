@@ -1,0 +1,95 @@
+
+/* Prompt: mostrar solo unas 5 líneas */
+/* Prompt: mostrar aproximadamente 5 líneas */
+.prompt-scroll .highlight pre {
+    max-height: 8em;
+    overflow-y: auto;
+}
+/* ==========================================================
+   2. COLUMNA DERECHA
+   Ocultar únicamente la tabla de contenidos de la derecha.
+   ========================================================== */
+
+.md-sidebar--secondary {
+    display: none !important;
+}
+
+
+/* ==========================================================
+   3. DISEÑO GENERAL
+   Aprovechar el ancho de pantalla.
+   ========================================================== */
+
+.md-grid {
+    max-width: none;
+}
+
+
+/* ==========================================================
+   4. MENÚ IZQUIERDO
+   Mantenerlo visible y dejarlo a 10 px del borde.
+   ========================================================== */
+
+@media screen and (min-width: 76.25em) {
+
+    .md-sidebar--primary {
+        display: block;
+        margin-left: 10px;
+    }
+
+    .md-main__inner {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+
+/* ==========================================================
+   5. CABECERA Y BUSCADOR
+   Aprovechar todo el ancho y colocar el buscador a la derecha.
+   NO fijamos su ancho para que Material pueda ampliarlo.
+   ========================================================== */
+
+@media screen and (min-width: 60em) {
+
+    .md-header__inner {
+        max-width: none;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .md-search {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+
+/* ==========================================================
+   6. TABLAS
+   No obligarlas a ocupar todo el ancho disponible.
+   ========================================================== */
+
+.md-typeset__table {
+    width: auto;
+}
+
+.md-typeset table:not([class]) {
+    width: auto;
+    max-width: 100%;
+}
+
+/* ==========================================================
+   LOGO DE LA CABECERA
+   ========================================================== */
+
+.md-header__button.md-logo {
+    padding: 0;
+    margin: 0 0.5rem 0 0;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 2.2rem;
+    width: 2.2rem;
+}

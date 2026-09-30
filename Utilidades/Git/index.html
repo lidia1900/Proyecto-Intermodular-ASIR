@@ -1,0 +1,1402 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lidia1900.github.io/Proyecto-Intermodular-ASIR/Utilidades/Git/">
+      
+      
+        <link rel="prev" href="../Documentacion/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Git y entorno de desarrollo - Proyecto Intermodular ASIR</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git-y-entorno-de-desarrollo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Proyecto Intermodular ASIR" class="md-header__button md-logo" aria-label="Proyecto Intermodular ASIR" data-md-component="logo">
+      
+  <img src="../../assets/images/colaborativo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Proyecto Intermodular ASIR
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Git y entorno de desarrollo
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Proyecto Intermodular ASIR" class="md-nav__button md-logo" aria-label="Proyecto Intermodular ASIR" data-md-component="logo">
+      
+  <img src="../../assets/images/colaborativo.png" alt="logo">
+
+    </a>
+    Proyecto Intermodular ASIR
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utilidades
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Utilidades
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Trello/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planificación y seguimiento con Trello
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Documentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git y entorno de desarrollo
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git y entorno de desarrollo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es Git?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-y-github-no-son-lo-mismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git y GitHub no son lo mismo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git y GitHub no son lo mismo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositorio-local-y-repositorio-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositorio local y repositorio remoto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Repositorio local y repositorio remoto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repositorio-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositorio local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositorio-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositorio remoto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entorno-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entorno de desarrollo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-basico-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo básico de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-de-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos básicos de Git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es un commit?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sincronizacion-con-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronización con GitHub
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historial-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historial del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso de permisos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forma-de-trabajo-durante-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forma de trabajo durante el proyecto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forma de trabajo durante el proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt-de-la-actividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt de la actividad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es Git?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-y-github-no-son-lo-mismo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git y GitHub no son lo mismo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git y GitHub no son lo mismo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GitHub
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositorio-local-y-repositorio-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositorio local y repositorio remoto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Repositorio local y repositorio remoto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repositorio-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositorio local
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repositorio-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repositorio remoto
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entorno-de-desarrollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entorno de desarrollo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-basico-de-trabajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Flujo básico de trabajo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comandos-basicos-de-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comandos básicos de Git
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ¿Qué es un commit?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sincronizacion-con-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sincronización con GitHub
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historial-del-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Historial del proyecto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uso de permisos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#forma-de-trabajo-durante-el-proyecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Forma de trabajo durante el proyecto
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Forma de trabajo durante el proyecto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt-de-la-actividad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prompt de la actividad
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="git-y-entorno-de-desarrollo">Git y entorno de desarrollo</h1>
+<p>Durante el desarrollo del <strong>Proyecto Intermodular</strong> iremos creando y modificando numerosos archivos: documentación, configuraciones, scripts, código fuente, etc.</p>
+<p>Para mantener todos estos archivos organizados y conservar un historial de los cambios realizados utilizaremos <strong>Git</strong> como sistema de control de versiones y <strong>GitHub</strong> como repositorio remoto.</p>
+<p>Además, utilizaremos <strong>Visual Studio Code</strong> como entorno principal de trabajo.</p>
+<hr />
+<h2 id="que-es-git">¿Qué es Git?</h2>
+<p><strong>Git</strong> es un sistema de control de versiones.</p>
+<p>Su función principal es permitirnos registrar los cambios que vamos realizando en los archivos de un proyecto.</p>
+<p>Gracias a Git podremos:</p>
+<ul>
+<li>Mantener un historial de las distintas versiones del proyecto.</li>
+<li>Saber qué archivos han sido modificados.</li>
+<li>Registrar conjuntos de cambios mediante <em>commits</em>.</li>
+<li>Recuperar versiones anteriores si fuera necesario.</li>
+<li>Trabajar de forma ordenada durante todo el desarrollo.</li>
+<li>Sincronizar nuestro trabajo con un repositorio remoto alojado en GitHub.</li>
+</ul>
+<p>Git trabaja principalmente en nuestro <strong>ordenador</strong>, sobre una copia local del proyecto.</p>
+<hr />
+<h2 id="git-y-github-no-son-lo-mismo">Git y GitHub no son lo mismo</h2>
+<p>Aunque utilizaremos ambas herramientas conjuntamente, es importante distinguirlas.</p>
+<h3 id="git">Git</h3>
+<p><strong>Git</strong> es el sistema de control de versiones instalado en nuestro ordenador.</p>
+<p>Se encarga de controlar los cambios realizados en los archivos y mantener el historial de versiones del proyecto.</p>
+<h3 id="github">GitHub</h3>
+<p><strong>GitHub</strong> es una plataforma que permite alojar repositorios Git en Internet.</p>
+<p>En nuestro Proyecto Intermodular utilizaremos GitHub para mantener una copia remota del repositorio y poder sincronizarla con nuestro trabajo local.</p>
+<p>De forma simplificada:</p>
+<div class="highlight"><pre><span></span><code>ORDENADOR DEL ALUMNO                         GITHUB
+
+┌──────────────────────┐              ┌──────────────────────┐
+│ Repositorio local    │              │ Repositorio remoto   │
+│                      │   push  ───► │                      │
+│         Git          │              │       GitHub         │
+│                      │ ◄───  pull   │                      │
+└──────────────────────┘              └──────────────────────┘
+</code></pre></div>
+<hr />
+<h2 id="repositorio-local-y-repositorio-remoto">Repositorio local y repositorio remoto</h2>
+<p>A lo largo del proyecto trabajaremos con dos copias relacionadas del repositorio.</p>
+<h3 id="repositorio-local">Repositorio local</h3>
+<p>Es la copia del proyecto almacenada en nuestro ordenador.</p>
+<p>Será sobre esta copia donde normalmente trabajaremos con <strong>Visual Studio Code</strong>, modificaremos archivos y utilizaremos los comandos de Git.</p>
+<h3 id="repositorio-remoto">Repositorio remoto</h3>
+<p>Es la copia del repositorio almacenada en <strong>GitHub</strong>.</p>
+<p>Nos servirá como punto de sincronización y permitirá mantener el proyecto disponible independientemente del equipo desde el que estemos trabajando.</p>
+<p>Git mantiene relacionados ambos repositorios.</p>
+<hr />
+<h2 id="entorno-de-desarrollo">Entorno de desarrollo</h2>
+<p>Para trabajar con el Proyecto Intermodular utilizaremos principalmente las siguientes herramientas:</p>
+<ul>
+<li><strong>Visual Studio Code:</strong> editor desde el que podremos trabajar con los archivos del proyecto.</li>
+<li><strong>Git:</strong> sistema de control de versiones utilizado para registrar los cambios.</li>
+<li><strong>GitHub:</strong> plataforma donde se encuentra alojado el repositorio remoto.</li>
+<li><strong>GitHub CLI (<code>gh</code>):</strong> herramienta que permite trabajar y autenticarnos en GitHub desde la terminal.</li>
+</ul>
+<p>El entorno podrá prepararse tanto en <strong>Ubuntu</strong> como en <strong>Windows</strong>.</p>
+<p>Los comandos básicos de Git que utilizaremos serán prácticamente los mismos independientemente del sistema operativo.</p>
+<hr />
+<h2 id="flujo-basico-de-trabajo">Flujo básico de trabajo</h2>
+<p>Al comenzar a trabajar por primera vez en un equipo tendremos que obtener una copia del repositorio existente en GitHub.</p>
+<p>Para ello utilizaremos:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone
+</code></pre></div>
+<p>A partir de ese momento trabajaremos sobre la copia local.</p>
+<p>El flujo habitual será:</p>
+<div class="highlight"><pre><span></span><code>GitHub
+   │
+   │ git clone
+   ▼
+Repositorio local
+   │
+   ▼
+Modificar archivos
+   │
+   ▼
+git status
+   │
+   ▼
+git add
+   │
+   ▼
+git commit
+   │
+   ▼
+git push
+   │
+   ▼
+GitHub
+</code></pre></div>
+<p>Es importante comprender que <strong>guardar un archivo en Visual Studio Code no significa que el cambio se haya enviado a GitHub</strong>.</p>
+<p>Los cambios pasan por diferentes etapas antes de llegar al repositorio remoto.</p>
+<hr />
+<h2 id="comandos-basicos-de-git">Comandos básicos de Git</h2>
+<p>Estos serán algunos de los comandos que utilizaremos con mayor frecuencia:</p>
+<table>
+<thead>
+<tr>
+<th>Comando</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git clone</code></td>
+<td>Crea en nuestro ordenador una copia de un repositorio existente</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>Muestra el estado actual del repositorio y los archivos modificados</td>
+</tr>
+<tr>
+<td><code>git add</code></td>
+<td>Selecciona los cambios que queremos incluir en el próximo commit</td>
+</tr>
+<tr>
+<td><code>git commit</code></td>
+<td>Registra los cambios en el historial del repositorio local</td>
+</tr>
+<tr>
+<td><code>git push</code></td>
+<td>Envía los commits del repositorio local a GitHub</td>
+</tr>
+<tr>
+<td><code>git pull</code></td>
+<td>Descarga e integra en nuestro repositorio local los cambios existentes en GitHub</td>
+</tr>
+<tr>
+<td><code>git log</code></td>
+<td>Permite consultar el historial de commits</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="que-es-un-commit">¿Qué es un commit?</h2>
+<p>Un <strong>commit</strong> representa un punto concreto del historial del proyecto.</p>
+<p>Podemos entenderlo como una versión registrada del trabajo realizado hasta ese momento.</p>
+<p>Cada commit incluye, entre otra información:</p>
+<ul>
+<li>Los cambios realizados.</li>
+<li>El autor.</li>
+<li>La fecha.</li>
+<li>Un mensaje que describe el cambio.</li>
+<li>Un identificador único.</li>
+</ul>
+<p>Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"Añade configuración inicial del servidor"</span>
+</code></pre></div>
+<p>Los mensajes de los commits deben ser <strong>breves pero descriptivos</strong>, de forma que al consultar posteriormente el historial podamos entender qué se hizo en cada momento.</p>
+<hr />
+<h2 id="sincronizacion-con-github">Sincronización con GitHub</h2>
+<p>Realizar un <code>commit</code> <strong>no envía automáticamente los cambios a GitHub</strong>.</p>
+<p>El commit queda inicialmente registrado en nuestro repositorio local.</p>
+<p>Para enviarlo al repositorio remoto utilizaremos:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>push
+</code></pre></div>
+<p>En sentido contrario, si existen cambios en GitHub que todavía no tenemos en nuestro ordenador, podremos obtenerlos mediante:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>pull
+</code></pre></div>
+<p>Por tanto:</p>
+<div class="highlight"><pre><span></span><code>LOCAL  ─── git push ───►  GITHUB
+
+LOCAL  ◄── git pull ────  GITHUB
+</code></pre></div>
+<hr />
+<h2 id="historial-del-proyecto">Historial del proyecto</h2>
+<p>Una de las principales ventajas de utilizar Git es que podremos consultar la evolución del proyecto.</p>
+<p>Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--oneline
+</code></pre></div>
+<p>permite visualizar de forma resumida los commits realizados:</p>
+<div class="highlight"><pre><span></span><code>8a31c42 Añade configuración inicial
+34ab221 Actualiza documentación
+a82f613 Crea estructura del proyecto
+</code></pre></div>
+<p>De esta forma podremos conocer cómo ha ido evolucionando el proyecto a lo largo del curso.</p>
+<hr />
+<h2 id="uso-de-permisos">Uso de permisos</h2>
+<p>Los comandos habituales de Git se ejecutarán con el <strong>usuario normal del sistema</strong>.</p>
+<p>Por ejemplo:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone
+git<span class="w"> </span>status
+git<span class="w"> </span>add
+git<span class="w"> </span>commit
+git<span class="w"> </span>push
+git<span class="w"> </span>pull
+</code></pre></div>
+<p>!!! warning "Importante"
+    No se deben ejecutar los comandos habituales de Git utilizando <code>sudo</code>.</p>
+<p>Los permisos de administrador únicamente podrán ser necesarios para determinadas tareas de configuración del equipo, como la instalación inicial de Git o de otras herramientas.</p>
+<p>Si estás trabajando en un <strong>ordenador del aula</strong> y el sistema solicita una contraseña de administrador durante una instalación, deberás pedir al profesor que introduzca las credenciales necesarias.</p>
+<hr />
+<h2 id="forma-de-trabajo-durante-el-proyecto">Forma de trabajo durante el proyecto</h2>
+<p>Durante el curso utilizaremos Git de forma habitual.</p>
+<p>El procedimiento general será:</p>
+<ol>
+<li>Trabajar sobre la copia local del proyecto.</li>
+<li>Modificar los archivos necesarios utilizando Visual Studio Code.</li>
+<li>Comprobar qué archivos han cambiado.</li>
+<li>Seleccionar los cambios que queremos registrar.</li>
+<li>Crear un commit con un mensaje descriptivo.</li>
+<li>Enviar los commits a GitHub.</li>
+<li>Mantener sincronizados el repositorio local y el repositorio remoto.</li>
+</ol>
+<p>De esta forma, <strong>GitHub contendrá la evolución del Proyecto Intermodular y Git nos permitirá mantener un historial organizado de todo el trabajo realizado</strong>.</p>
+<h3 id="prompt-de-la-actividad">Prompt de la actividad</h3>
+<p>Copia el siguiente prompt completo y pégalo en ChatGPT. A partir de ese momento, ChatGPT te guiará paso a paso durante la realización de la actividad. No avances por tu cuenta: ejecuta cada acción, comprueba el resultado y continúa cuando el paso anterior haya funcionado correctamente.</p>
+<div class="prompt-scroll" markdown="1">
+
+<div class="highlight"><pre><span></span><code>Actúa como mi profesor y asistente técnico para realizar la Tarea 2 del Proyecto Intermodular de 2.º ASIR.
+
+IMPORTANTE: aunque soy alumno de 2.º ASIR, quiero que me expliques Git desde cero, con un nivel inicial, como si fuera la primera vez que trabajo con Git en local.
+
+NO me des todos los pasos de golpe.
+
+Debes trabajar conmigo PASO A PASO siguiendo estas reglas:
+
+1. Explícame brevemente qué vamos a hacer en cada paso y para qué sirve.
+2. Dame solamente el comando o acción correspondiente a ese paso.
+3. Espera a que yo lo ejecute.
+4. Yo te indicaré el resultado o te enviaré una captura de pantalla.
+5. Comprueba el resultado antes de continuar.
+6. Si aparece un error, ayúdame a resolverlo antes de avanzar.
+7. No supongas nombres de usuario, rutas, nombres de repositorios ni URLs. Pregúntame o haz que los compruebe.
+8. No me hagas utilizar `sudo` con comandos habituales de Git como `git clone`, `git add`, `git commit`, `git push` o `git pull`.
+9. Si estamos en un ordenador Ubuntu del aula y una instalación requiere contraseña de administrador, indícame que debo pedir al profesor que introduzca la contraseña.
+10. No pases al siguiente paso hasta que yo confirme que el anterior ha funcionado.
+
+
+==========================================================
+CONTEXTO DE LA TAREA
+==========================================================
+
+En la Tarea 1 ya creé mi Proyecto Intermodular.
+
+Tengo:
+
+- Una cuenta de GitHub.
+- Un repositorio propio del Proyecto Intermodular.
+- Documentación escrita en Markdown.
+- Una web creada con MkDocs.
+- La web publicada mediante GitHub Pages.
+
+Ahora tengo que aprender a trabajar con una copia LOCAL del proyecto utilizando Git y Visual Studio Code.
+
+Puedo encontrarme en uno de estos entornos:
+
+A) Ordenador del aula:
+- Ubuntu.
+- Utilizo el usuario del turno de mañana.
+- No dispongo de la contraseña de administrador.
+- Si una instalación requiere `sudo`, debo pedir al profesor que introduzca la contraseña.
+
+B) Ordenador personal con Ubuntu/Linux:
+- Tengo permisos de administrador.
+
+C) Ordenador personal con Windows:
+- Tengo permisos de administrador.
+- Trabajaré con Visual Studio Code y una terminal adecuada de Windows.
+
+D) Máquina virtual propia con Ubuntu:
+- Tengo permisos de administrador.
+
+Lo primero que debes hacer es preguntarme en cuál de estos cuatro entornos estoy trabajando y adaptar todos los pasos posteriores a mi sistema.
+
+
+==========================================================
+OBJETIVOS
+==========================================================
+
+Debes guiarme hasta completar todo este proceso:
+
+1. Identificar mi sistema operativo, usuario y directorio de trabajo.
+2. Comprobar si Git está instalado.
+3. Instalar Git si fuera necesario.
+4. Comprobar la versión instalada.
+5. Configurar mi identidad de Git:
+   - user.name
+   - user.email
+6. Comprobar la configuración.
+7. Crear una carpeta denominada `proyectos` dentro de mi directorio personal para utilizarla como espacio de trabajo de mis repositorios.
+8. Obtener de GitHub la URL HTTPS de MI repositorio del Proyecto Intermodular.
+9. Clonar MI repositorio mediante `git clone`.
+10. Entrar en el repositorio.
+11. Comprobar que Git reconoce correctamente el repositorio mediante `git status`.
+12. Comprobar el repositorio remoto mediante `git remote -v`.
+13. Abrir el proyecto con Visual Studio Code.
+14. Realizar una modificación sencilla en un archivo existente del proyecto.
+15. Guardar el archivo.
+16. Utilizar `git status` y explicarme qué ha detectado Git.
+17. Preparar el archivo mediante `git add`.
+18. Volver a utilizar `git status` para comprobar el cambio de estado.
+19. Crear un commit mediante `git commit`.
+20. Explicarme claramente que el commit todavía es LOCAL y que aún no se ha enviado a GitHub.
+21. Comprobar si GitHub CLI (`gh`) está instalado.
+22. Instalar GitHub CLI si fuera necesario.
+23. Autenticarme mediante `gh auth login`.
+24. Guíame opción por opción durante la autenticación. No me des todas las respuestas de golpe.
+25. Comprobar la autenticación mediante `gh auth status`.
+26. Realizar `git push`.
+27. Comprobar que el cambio aparece realmente en GitHub.
+28. Consultar el historial mediante `git log --oneline` y explicarme qué representa.
+29. Si el comando abre un visor, indícame cómo salir de él.
+
+
+==========================================================
+SEGUNDA PARTE: DOCUMENTACIÓN TÉCNICA REAL DEL PROYECTO
+==========================================================
+
+Después de comprobar que sé realizar el flujo básico de Git, ayúdame a ampliar la documentación REAL de mi Proyecto Intermodular.
+
+No debes crear documentación genérica sobre Git.
+
+Tengo que crear una nueva página de mi memoria técnica denominada:
+
+"Entorno tecnológico"
+
+Antes de indicarme dónde crearla, debes pedirme que te muestre la estructura actual de mi proyecto: carpetas, archivos y, si es necesario, el contenido de `mkdocs.yml`.
+
+NO inventes rutas.
+
+A partir de mi estructura real:
+
+1. Indícame dónde crear `entorno-tecnologico.md`.
+2. Ayúdame a añadirla correctamente a la navegación de `mkdocs.yml`.
+3. Respeta la estructura que ya tenga mi documentación.
+
+La página "Entorno tecnológico" deberá documentar MI proyecto y contener, al menos:
+
+- Sistemas operativos previstos.
+- Herramientas de desarrollo y administración.
+- Tecnologías previstas.
+- Servicios o componentes que inicialmente considero necesarios.
+- Observaciones y decisiones técnicas iniciales.
+
+No escribas automáticamente las decisiones técnicas por mí.
+
+Pregúntame en qué consiste mi proyecto y ayúdame a identificar qué tecnologías tienen sentido.
+
+Debo ser yo quien tome las decisiones finales.
+
+
+==========================================================
+VISUALIZACIÓN LOCAL CON MKDOCS
+==========================================================
+
+Después debes ayudarme a comprobar cómo queda la documentación antes de publicarla.
+
+Primero comprueba si MkDocs está disponible.
+
+Si no lo está, guíame para preparar un entorno virtual de Python `.venv` adecuado para mi sistema operativo.
+
+Explícame brevemente:
+
+- qué es un entorno virtual;
+- para qué sirve `.venv`;
+- por qué lo utilizamos en este proyecto.
+
+Después:
+
+1. Instala `mkdocs-material` dentro del entorno virtual.
+2. Crea o modifica `.gitignore` para que `.venv/` NO se suba a GitHub.
+3. Comprueba con `git status` que `.venv` está siendo ignorado.
+4. Ejecuta `mkdocs serve`.
+5. Indícame la dirección local que debo abrir en el navegador.
+6. Haz que compruebe que "Entorno tecnológico" aparece correctamente en la web.
+7. Indícame cómo detener el servidor de MkDocs.
+
+
+==========================================================
+ÚLTIMO CICLO DE GIT
+==========================================================
+
+Una vez comprobada la nueva página:
+
+1. Ejecutaremos `git status`.
+2. Revisaremos juntos qué archivos han cambiado.
+3. Añadiremos únicamente los archivos necesarios.
+4. Comprobaremos nuevamente `git status`.
+5. Crearemos un commit con un mensaje descriptivo relacionado con la documentación técnica.
+6. Realizaremos `git push`.
+7. Comprobaremos el resultado en GitHub.
+8. Comprobaremos la web publicada del Proyecto Intermodular.
+9. Finalmente ejecutaremos `git status` y verificaremos que el repositorio local está sincronizado y el árbol de trabajo está limpio.
+
+
+==========================================================
+RUTINA DE TRABAJO
+==========================================================
+
+Cuando terminemos la actividad, explícame también cuál será el procedimiento habitual para continuar trabajando en el proyecto durante el curso.
+
+Debo comprender la diferencia entre:
+
+`git clone`
+→ se utiliza para obtener por primera vez una copia local de un repositorio.
+
+`git pull`
+→ se utiliza cuando ya tengo el repositorio y quiero traer los últimos cambios existentes en GitHub.
+
+`git push`
+→ se utiliza para enviar a GitHub los commits que he realizado en mi repositorio local.
+
+Ayúdame a comprender este ciclo:
+
+GitHub
+   ↓
+git pull
+   ↓
+Repositorio local
+   ↓
+Modificar archivos
+   ↓
+git status
+   ↓
+git add
+   ↓
+git commit
+   ↓
+git push
+   ↓
+GitHub
+
+
+==========================================================
+SEGURIDAD Y EQUIPOS COMPARTIDOS
+==========================================================
+
+Si estoy utilizando el ordenador compartido del aula, ten especial cuidado con:
+
+- permisos de archivos;
+- propietarios de archivos;
+- credenciales de GitHub;
+- sesiones que puedan quedar abiertas.
+
+Nunca soluciones un problema de permisos utilizando `sudo` indiscriminadamente.
+
+Si aparece un error de permisos o de propiedad, primero hazme ejecutar comandos de diagnóstico como:
+
+`whoami`
+
+`pwd`
+
+`ls -ld`
+
+y analiza el resultado antes de proponer cambios.
+
+El repositorio debe pertenecer al usuario con el que estoy trabajando.
+
+No utilices `sudo` para:
+
+`git clone`
+
+`git add`
+
+`git commit`
+
+`git push`
+
+`git pull`
+
+Si el equipo es compartido, al finalizar recuérdame que debemos comprobar si es necesario cerrar la sesión de GitHub para no dejar mis credenciales disponibles para otro alumno.
+
+
+==========================================================
+FORMA DE TRABAJAR
+==========================================================
+
+No quiero que realices la tarea por mí.
+
+Quiero que me enseñes a realizarla.
+
+Por tanto:
+
+- Una acción cada vez.
+- Una explicación breve antes de cada acción.
+- Espera siempre mi resultado.
+- Si envío una captura, analízala antes de continuar.
+- Si me equivoco, explícame qué ha ocurrido.
+- No avances si existe un error pendiente.
+- No inventes resultados de comandos.
+- No inventes nombres de usuario, rutas ni repositorios.
+- Adapta los comandos a Windows o Ubuntu según mi caso.
+- Cuando haya varias posibilidades, explícame brevemente la diferencia y ayúdame a elegir.
+- Utiliza lenguaje claro y adecuado para un alumno que está aprendiendo Git por primera vez.
+
+
+==========================================================
+REGLA FINAL
+==========================================================
+
+NO ME EXPLIQUES AHORA TODO EL PROCESO.
+
+Trabaja conmigo paso a paso.
+
+EMPIEZA ÚNICAMENTE preguntándome en cuál de estos entornos estoy trabajando:
+
+A) Ordenador del aula con Ubuntu y usuario del turno de mañana.
+
+B) Ordenador personal con Ubuntu/Linux.
+
+C) Ordenador personal con Windows.
+
+D) Máquina virtual propia con Ubuntu.
+
+No me proporciones todavía ningún comando.
+</code></pre></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
